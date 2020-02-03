@@ -1,0 +1,18 @@
+Feature: User wants to provide add function for the calculator
+ 
+  Scenario: Add two numbers
+    Given calculator exists
+    When add is called with two numbers
+    Then result is the addition of the two number
+    
+   Scenario: Add two given numbers
+    Given calculator exists
+    When add is called with 30 and 40
+    Then result is 70
+  
+   Scenario: Addition
+    Given calculator exists
+    When Enter the two integer number which are less than 1000 and greate than 0
+    Then result is the addition of two given number
+    
+   

@@ -1,0 +1,45 @@
+package cucumberqk.steps;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import utils.HelperFunctions;
+
+public class CalculatoSteps {
+	WebDriver driver;
+	@Given("a web browser is on the Google page and we search the given url")
+	public void a_web_browser_is_on_the_Google_page_and_we_search_the_given_url() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		driver=HelperFunctions.createAppropriateDriver("chrome");
+		driver.get("http://ata123456789123456789.appspot.com/");
+	    
+	}
+
+	@When("comparesion is called with two numbers the numbers are {int} and {int}")
+	public void comparesion_is_called_with_two_numbers_the_numbers_are_and(Integer int1, Integer int2) {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+	
+	By click1 = By.xpath("//*[@id=\"ID_nameField1\"]");
+		
+		WebElement element = driver.findElement(click1);
+		element.sendKeys(int1);
+		
+		
+		
+	}
+
+	@Then("results is greatest number")
+	public void results_is_greatest_number() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+
+
+}

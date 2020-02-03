@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerTest" project="cucumberqk" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="cucumberqk.runner.RunnerTest" time="42.347">
+    <testsuite name="Feature: compare" time="42.347">
+      <testcase name="Simple Google search" classname="compare" time="16.232"/>
+      <testcase name="EMPTY_NAME" classname="compare" time="13.101"/>
+      <testcase name="EMPTY_NAME" classname="compare" time="13.014"/>
+    </testsuite>
+  </testsuite>
+</testrun>

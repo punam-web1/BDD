@@ -1,0 +1,7 @@
+Feature: compare
+  As a web surfer, I want to search ATA Super Smart Calculator, so that I can learn new things.
+  Background:
+  Given a web browser is on the Google page
+  Scenario: Simple Google search
+    When comparesion is called with two numbers
+    Then results is greatest number

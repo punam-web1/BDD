@@ -1,0 +1,67 @@
+package cucumberqk;
+
+public class Calculator {
+	String errMsg;
+	public int add(int x, int y)
+	{
+		if(x==1000 && (y<1000 && y>0))
+		{
+	return -1;
+	}
+		
+		else if(y==1000 && (x<1000 && x>0))
+		{
+			
+		}
+		
+		else if(x==1000 && y==1000)
+		{
+			return -1;
+		}
+		
+		else if(x==0 && (y>0 && y<1000))
+		{
+			return -1;
+		}
+		else if(y==0 && (x>0 && x<1000))
+		{
+			return -1;
+		}
+		else if(x==0 && y==0)
+		{
+			return -1;
+		}
+		else if(x<0 && (y>0 && y<1000))
+		{
+			return -1;
+		}
+		else if(y<0 && (x>0 && x<1000))
+		{
+			return -1;
+		}
+		else if(x<0 && y<0)
+		{
+			return -1;
+		}
+		
+		
+	}
+	public void getErrorMessage()
+	{
+		errMsg="Numbers are not integer please Enter Integer Number";
+		System.out.println(errMsg);
+		
+	}
+	public int add(double d, double e) {
+		// TODO Auto-generated method stub
+		return -1;
+	}
+	public int add(int d, double e) {
+		// TODO Auto-generated method stub
+		return -1;
+	}
+	public int add(double d, int e) {
+		// TODO Auto-generated method stub
+		return -1;
+	}
+}

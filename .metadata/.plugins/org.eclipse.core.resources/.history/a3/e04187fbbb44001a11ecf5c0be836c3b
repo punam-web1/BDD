@@ -1,0 +1,81 @@
+package cucumberqk.steps;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import cucumberqk.*;
+public class Steps {
+	Calculator calc=null;
+	int result;
+	@Given("calculator exists")
+	public void calculator_exists() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		System.out.println("calculator exists");
+		calc= new Calculator();
+	}
+
+	@When("add is called with two numbers")
+	public void add_is_called_with_two_numbers() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		System.out.println("add is called with two numbers");
+		result =calc.add(30,40);
+	}
+
+	@Then("result is the addition of the two number")
+	public void result_is_the_addition_of_the_two_number() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		System.out.println("result is the addition of the two number: "+result);
+	}
+	
+	@When("add is called with {int} and {int}")
+	public void add_is_called_with_and(Integer int1, Integer int2) {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		result=calc.add(int1, int2);
+	}
+
+	@Then("result is {int}")
+	public void result_is(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		if(result==int1)
+		{
+			System.out.println("Test Passed");
+		}
+		else {
+			System.out.println("Test Failed");
+		}
+	}
+	@When("add is called with two integer number which are less than {int} and greate than {int}")
+	public void enter_the_two_integer_number_which_are_less_than_and_greate_than(Integer int1, Integer int2) {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		result=calc.add(-1,10.20);
+		
+	}
+
+
+	@Then("result is the addition of two given number")
+	public void result_is_the_addition_of_two_given_number() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		if(result==-1)
+		{
+			calc.getErrorMessage();
+		}
+		else {
+		System.out.println("result is the addition of the two number: "+result);
+	}
+	}
+				
+
+	}
+
+
+
+
+
+

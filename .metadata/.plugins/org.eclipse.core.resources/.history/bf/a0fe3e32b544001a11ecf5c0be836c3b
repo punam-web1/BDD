@@ -1,0 +1,32 @@
+package cucumberqk.steps;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Steps {
+	
+	@Given("calculator exists")
+	public void calculator_exists() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		System.out.println("calculator exists");
+	}
+
+	@When("add is called with two numbers")
+	public void add_is_called_with_two_numbers() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		System.out.println("add is called with two numbers");
+	}
+
+	@Then("result is the addition of the two number")
+	public void result_is_the_addition_of_the_two_number() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		System.out.println("result is the addition of the two number");
+	}
+
+
+
+}

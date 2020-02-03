@@ -1,0 +1,13 @@
+Feature: User wants to provide add function for the calculator
+ 
+  Scenario: Add two numbers
+    Given calculator exists
+    When add is called with two numbers
+    Then result is the addition of the two number
+    
+   Scenario: Add two given numbers
+    Given calculator exists
+    When add is called with 30.0 and 40.9
+    Then result is 70
+  
+    

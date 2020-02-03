@@ -1,0 +1,6 @@
+Feature: User wants to provide add function for the calculator
+ 
+  Scenario: Add two numbers
+    Given calculator exists
+    When add is called with two numbers
+    Then result is the addition of the two number
